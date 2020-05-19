@@ -1,17 +1,28 @@
 
-.box {
-    display: inline-block;
-    height: 200px;
-    width: 200px;
-    background-color: dodgerblue;
+#parent {
+    border: 10px solid red;
+    width: 80vw;
+}
 
+.box {
+    height: 100px;
+    width: 200px;
+    background-color: blue;
+    margin: 10px 0;
+    font-size: 30px;
+    color: white;
+
+    /*TRANSITION*/
     transition-property: width;
-    transition-duration: 2s;
-    transition-timing-function: linear;
+    transition-duration: 6s;
     /*transition-delay: 4s;*/
+    text-align: center;
+    text-transform: uppercase;
+
 }
 
 
-.box:hover, .box:focus {
-    width: 400px;
+#parent:hover > div {
+
+    width: 100%;
 }
