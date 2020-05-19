@@ -1,54 +1,17 @@
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    white-space: nowrap;
-    text-wrap: none;
-}
-
-li {
+.box {
     display: inline-block;
-    box-sizing: border-box;
-    padding: 10px;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    margin: 20px auto;
-    position: relative;
-}
-
-li:hover {
-    cursor: pointer;
-}
-
-li::before, li::after {
-    content: '';
-    height: 10px;
-
-    position: absolute;
-
+    height: 200px;
+    width: 200px;
+    background-color: dodgerblue;
 
     transition-property: width;
-    transition-duration: 1s;
-
-}
-
-li::before {
-    background-image: linear-gradient(to right, #f4e639, #e72327);
-    top: calc(100% + 2px);
-    right: 0;
-    width: 0;
-
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    /*transition-delay: 4s;*/
 }
 
 
-li::after {
-    background-image: linear-gradient(to right, #e72327, #f4e639);
-    bottom: calc(100% + 2px);
-    left: 0;
-    width: 0;
-}
-
-li:hover::before, li:hover::after {
-    width: 100%;
+.box:hover, .box:focus {
+    width: 400px;
 }
